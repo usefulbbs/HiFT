@@ -1,6 +1,6 @@
 # HiFT
 
-Official implementation of **"HiFT: Hierarchical Frequency-to-Time Recalibration for Efficient Speaker Embedding Learning"**.
+Official implementation of **"HiFT: Hierarchical Frequency-to-Time Recalibration for Efficient Speaker Embedding Learning (Submitted to IEEE SPL)"**.
 
 This repository provides the model definition files for HiFT.
 
