@@ -4,7 +4,7 @@ Official implementation of **"HiFT: Hierarchical Frequency-to-Time Recalibration
 
 This repository provides the model definition files for HiFT.
 
-Additionally, We constructed an additional training subset from the VoxCeleb2 training set, denoted as VoxMini-150K, using a 17.5% per-speaker sampling ratio, compared with 12.5% for the original VoxMini. Speakers with fewer than five selected clips were removed, and the total number of training clips was capped at 150,000. The resulting subset contains 150,000 clips from 4,603 speakers, whereas the original VoxMini contains approximately 100,000 clips from 4,081 speakers.
+Additionally, we constructed an additional training subset from the VoxCeleb2 training set, denoted as VoxMini-150K, using a 17.5% per-speaker sampling ratio, compared with 12.5% for the original VoxMini. Speakers with fewer than five selected clips were removed, and the total number of training clips was capped at 150,000. The resulting subset contains 150,000 clips from 4,603 speakers, whereas the original VoxMini contains approximately 100,000 clips from 4,081 speakers.
 
 ## Installation
 
