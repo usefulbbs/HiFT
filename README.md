@@ -4,6 +4,8 @@ Official implementation of **"HiFT: Hierarchical Frequency-to-Time Recalibration
 
 This repository provides the model definition files for HiFT.
 
+Additionally, We constructed an additional training subset from the VoxCeleb2 training set, denoted as VoxMini-150K, using a 17.5% per-speaker sampling ratio, compared with 12.5% for the original VoxMini. Speakers with fewer than five selected clips were removed, and the total number of training clips was capped at 150,000. The resulting subset contains 150,000 clips from 4,603 speakers, whereas the original VoxMini contains approximately 100,000 clips from 4,081 speakers.
+
 ## Installation
 
 This repository provides the model architecture implementation and reference files for HiFT, including the model definition, a training configuration, VoxCeleb-style data lists/trials, and a reference training/evaluation script.
@@ -13,13 +15,17 @@ This repository provides the model architecture implementation and reference fil
 ```text
 conf/HiFT.yaml                 # reference training configuration
 models/HiFT.py                 # HiFT model architecture implementation
-data/voxmini/wav.scp           # Kaldi-style training audio list
-data/vox1/wav.scp              # Kaldi-style evaluation audio list
-data/vox1/trials/              # VoxCeleb1 trial lists
-run.sh                         # reference training/evaluation pipeline
+data/VoxMini/wav.scp           # Kaldi-style training audio list
+data/Vox1/wav.scp              # Kaldi-style evaluation audio list
+data/Vox1/trials/              # VoxCeleb1 trial lists
+data/VoxMini-150K/wav.scp      # Kaldi-style training audio list
+data/VoxMini-150K/utt2spk      
+data/VoxMini-150K/spk2utt
+run.sh                         # Reference training/evaluation pipeline
 requirements.txt               # Python dependencies
 LICENSE                        # MIT License
-end-to-end figure of HiFT.pdf  # an end-to-end figure of the HiFT-based model
+end-to-end figure of HiFT.pdf  # An end-to-end figure of the HiFT-based model
+Experimental Results Under VoxMini-150K.pdf  # Performance comparison of representative speaker verification systems under the voxmini-150k training set
 ```
 
 ## Installation
